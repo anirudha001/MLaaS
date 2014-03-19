@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="lib" path="hadoopLib/hadoop-ant-1.0.1.jar"/>
+	<classpathentry kind="lib" path="hadoopLib/hadoop-client-1.0.1.jar"/>
+	<classpathentry kind="lib" path="hadoopLib/hadoop-core-1.0.1.jar"/>
+	<classpathentry kind="lib" path="hadoopLib/hadoop-examples-1.0.1.jar"/>
+	<classpathentry kind="lib" path="hadoopLib/hadoop-minicluster-1.0.1.jar"/>
+	<classpathentry kind="lib" path="hadoopLib/hadoop-test-1.0.1.jar"/>
+	<classpathentry kind="lib" path="hadoopLib/hadoop-tools-1.0.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,94 @@
+0     DEBUG [main] conf.Configuration - java.io.IOException: config()
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:227)
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:214)
+	at org.apache.hadoop.mapred.JobConf.<init>(JobConf.java:330)
+	at org.laas.core.poc.readLog.sample.PocMain.main(PocMain.java:28)
+
+135   DEBUG [main] conf.Configuration - java.io.IOException: config()
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:227)
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:214)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:187)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:239)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:438)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:424)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1494)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1395)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:254)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:123)
+	at org.apache.hadoop.mapred.JobConf.getWorkingDirectory(JobConf.java:542)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:318)
+	at org.laas.core.poc.readLog.sample.PocMain.main(PocMain.java:46)
+
+165   DEBUG [main] security.Groups -  Creating new Groups object
+173   DEBUG [main] security.Groups - Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping; cacheTimeout=300000
+181   DEBUG [main] conf.Configuration - java.io.IOException: config()
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:227)
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:214)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:187)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:239)
+	at org.apache.hadoop.security.KerberosName.<clinit>(KerberosName.java:83)
+	at org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:212)
+	at org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:187)
+	at org.apache.hadoop.security.UserGroupInformation.isSecurityEnabled(UserGroupInformation.java:239)
+	at org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:438)
+	at org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:424)
+	at org.apache.hadoop.fs.FileSystem$Cache$Key.<init>(FileSystem.java:1494)
+	at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:1395)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:254)
+	at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:123)
+	at org.apache.hadoop.mapred.JobConf.getWorkingDirectory(JobConf.java:542)
+	at org.apache.hadoop.mapred.FileInputFormat.setInputPaths(FileInputFormat.java:318)
+	at org.laas.core.poc.readLog.sample.PocMain.main(PocMain.java:46)
+
+269   DEBUG [main] security.UserGroupInformation - hadoop login
+279   DEBUG [main] security.UserGroupInformation - hadoop login commit
+284   DEBUG [main] security.UserGroupInformation - using local user:UnixPrincipal: anirudha
+286   DEBUG [main] security.UserGroupInformation - UGI loginUser:anirudha
+293   DEBUG [main] fs.FileSystem - Creating filesystem for file:///
+316   DEBUG [main] conf.Configuration - java.io.IOException: config(config)
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:260)
+	at org.apache.hadoop.mapred.JobConf.<init>(JobConf.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner.<init>(LocalJobRunner.java:420)
+	at org.apache.hadoop.mapred.JobClient.init(JobClient.java:472)
+	at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:457)
+	at org.apache.hadoop.mapred.JobClient.runJob(JobClient.java:1260)
+	at org.laas.core.poc.readLog.sample.PocMain.main(PocMain.java:66)
+
+322   DEBUG [main] conf.Configuration - java.io.IOException: config(config)
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:260)
+	at org.apache.hadoop.mapred.JobConf.<init>(JobConf.java:341)
+	at org.apache.hadoop.mapred.LocalJobRunner.<init>(LocalJobRunner.java:421)
+	at org.apache.hadoop.mapred.JobClient.init(JobClient.java:472)
+	at org.apache.hadoop.mapred.JobClient.<init>(JobClient.java:457)
+	at org.apache.hadoop.mapred.JobClient.runJob(JobClient.java:1260)
+	at org.laas.core.poc.readLog.sample.PocMain.main(PocMain.java:66)
+
+329   DEBUG [main] security.UserGroupInformation - PriviledgedAction as:anirudha from:org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:850)
+345   DEBUG [main] util.NativeCodeLoader - Trying to load the custom-built native-hadoop library...
+346   DEBUG [main] util.NativeCodeLoader - Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+347   DEBUG [main] util.NativeCodeLoader - java.library.path=/usr/lib/jvm/java-6-openjdk/jre/lib/i386/client:/usr/lib/jvm/java-6-openjdk/jre/lib/i386:/usr/lib/jvm/java-6-openjdk/jre/../lib/i386:/usr/lib/jvm/java-6-openjdk/jre/lib/i386/client:/usr/lib/jvm/java-6-openjdk/jre/lib/i386::/usr/java/packages/lib/i386:/usr/lib/jni:/lib:/usr/lib
+347   WARN  [main] util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+352   DEBUG [main] mapred.JobClient - adding the following namenodes' delegation tokens:null
+352   WARN  [main] mapred.JobClient - Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+353   DEBUG [main] mapred.JobClient - default FileSystem: file:///
+359   WARN  [main] mapred.JobClient - No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+366   DEBUG [main] conf.Configuration - java.io.IOException: config(config)
+	at org.apache.hadoop.conf.Configuration.<init>(Configuration.java:260)
+	at org.apache.hadoop.mapred.JobConf.<init>(JobConf.java:341)
+	at org.apache.hadoop.mapreduce.JobContext.<init>(JobContext.java:76)
+	at org.apache.hadoop.mapred.JobClient$2.run(JobClient.java:879)
+	at org.apache.hadoop.mapred.JobClient$2.run(JobClient.java:850)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:416)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1093)
+	at org.apache.hadoop.mapred.JobClient.submitJobInternal(JobClient.java:850)
+	at org.apache.hadoop.mapred.JobClient.submitJob(JobClient.java:824)
+	at org.apache.hadoop.mapred.JobClient.runJob(JobClient.java:1261)
+	at org.laas.core.poc.readLog.sample.PocMain.main(PocMain.java:66)
+
+368   INFO  [main] mapred.JobClient - Cleaning up the staging area file:/tmp/hadoop-anirudha/mapred/staging/anirudha-1812134966/.staging/job_local_0001
+369   ERROR [main] security.UserGroupInformation - PriviledgedActionException as:anirudha cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory file:/home/anirudha/Desktop/loggsout already exists
+372   DEBUG [Thread-0] fs.FileSystem - Starting clear of FileSystem cache with 1 elements.
+373   DEBUG [Thread-0] fs.FileSystem - Removing filesystem for file:///
+373   DEBUG [Thread-0] fs.FileSystem - Removing filesystem for file:///
+373   DEBUG [Thread-0] fs.FileSystem - Done clearing cache

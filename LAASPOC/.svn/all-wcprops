@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/loggingaas/code-0/!svn/ver/17/trunk/LAAS/trunk/LAASPOC
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/loggingaas/code-0/!svn/ver/17/trunk/LAAS/trunk/LAASPOC/test
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/loggingaas/code-0/!svn/ver/17/trunk/LAAS/trunk/LAASPOC/.project
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/loggingaas/code-0/!svn/ver/25/trunk/LAAS/trunk/LAASPOC/.classpath
+END
